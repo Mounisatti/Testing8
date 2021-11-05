@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.10.0 on win32)" generated="20211104 21:53:28.506" rpa="false" schemaversion="2">
+<suite id="s1" name="TC1" source="C:\Users\user\PycharmProjects\SikuliAutomation\TC1.robot">
+<test id="s1-t1" name="TC1 Start Browser">
+<kw name="Start button">
+<var>${r}</var>
+<arg>${Path}</arg>
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20211104 21:53:28.734" level="INFO">Starting process:
+java -jar C:\Users\user\AppData\Roaming\Python\Python310\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 60476 C:\Users\user\PycharmProjects\SikuliAutomation</msg>
+<msg timestamp="20211104 21:53:28.738" level="INFO">Start sikuli java process on port 60476</msg>
+<msg timestamp="20211104 21:53:30.374" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20211104 21:53:28.719" endtime="20211104 21:53:36.033"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>${image_path}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20211104 21:53:36.093" level="INFO">Params: [C:/Users/user/Desktop/Sikuli-Images]</msg>
+<status status="PASS" starttime="20211104 21:53:36.034" endtime="20211104 21:53:36.093"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>windows.png</arg>
+<doc>Click</doc>
+<msg timestamp="20211104 21:53:38.299" level="INFO">Params: [windows.png]</msg>
+<msg timestamp="20211104 21:53:38.299" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1636043017264.png'/&gt;
+[log] CLICK on L[27,747]@S(0) (527 msec)</msg>
+<status status="PASS" starttime="20211104 21:53:36.094" endtime="20211104 21:53:38.300"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Search.png</arg>
+<doc>Click</doc>
+<msg timestamp="20211104 21:53:40.613" level="INFO">Params: [Search.png]</msg>
+<msg timestamp="20211104 21:53:40.613" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1636043019737.png'/&gt;
+[log] CLICK on L[1299,80]@S(0) (522 msec)</msg>
+<status status="PASS" starttime="20211104 21:53:38.300" endtime="20211104 21:53:40.613"/>
+</kw>
+<kw name="Get Text" library="SikuliLibrary">
+<var>${Image_Text}</var>
+<arg>Google-Chrome.png</arg>
+<doc>Get text</doc>
+<msg timestamp="20211104 21:53:41.106" level="INFO">Params: [Google-Chrome.png]
+Could not find P(Google-Chrome.png) S: 0.699999988079071</msg>
+<msg timestamp="20211104 21:53:41.109" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Could not find Google-Chrome.png</msg>
+<status status="FAIL" starttime="20211104 21:53:40.614" endtime="20211104 21:53:41.109"/>
+</kw>
+<status status="FAIL" starttime="20211104 21:53:28.718" endtime="20211104 21:53:41.112"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>Searchtext.png</arg>
+<arg>Google</arg>
+<doc>Input text
+ Image could be empty</doc>
+<status status="NOT RUN" starttime="20211104 21:53:41.116" endtime="20211104 21:53:41.117"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Google-Chrome.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211104 21:53:41.118" endtime="20211104 21:53:41.118"/>
+</kw>
+<status status="FAIL" starttime="20211104 21:53:28.716" endtime="20211104 21:53:41.119">com.github.rainmanwy.robotframework.sikulilib.exceptions.ScreenOperationException: Could not find Google-Chrome.png</status>
+</test>
+<test id="s1-t2" name="TC2 Right click">
+<kw name="Start button">
+<arg>${Path}</arg>
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20211104 21:53:41.146" level="INFO">Starting process:
+java -jar C:\Users\user\AppData\Roaming\Python\Python310\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 60498 C:\Users\user\PycharmProjects\SikuliAutomation</msg>
+<msg timestamp="20211104 21:53:41.148" level="INFO">Start sikuli java process on port 60498</msg>
+<msg timestamp="20211104 21:53:42.504" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20211104 21:53:41.123" endtime="20211104 21:53:47.738"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>${image_path}</arg>
+<doc>Add image path</doc>
+<msg timestamp="20211104 21:53:47.793" level="INFO">Params: [C:/Users/user/Desktop/Sikuli-Images]</msg>
+<status status="PASS" starttime="20211104 21:53:47.739" endtime="20211104 21:53:47.793"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>windows.png</arg>
+<doc>Click</doc>
+<msg timestamp="20211104 21:53:52.466" level="INFO">Params: [windows.png]</msg>
+<msg timestamp="20211104 21:53:52.466" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1636043031872.png'/&gt;</msg>
+<msg timestamp="20211104 21:53:52.468" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(windows.png) S: 0.699999988079071</msg>
+<status status="FAIL" starttime="20211104 21:53:47.793" endtime="20211104 21:53:52.468"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Search.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211104 21:53:52.470" endtime="20211104 21:53:52.470"/>
+</kw>
+<kw name="Get Text" library="SikuliLibrary">
+<var>${Image_Text}</var>
+<arg>Google-Chrome.png</arg>
+<doc>Get text</doc>
+<status status="NOT RUN" starttime="20211104 21:53:52.470" endtime="20211104 21:53:52.471"/>
+</kw>
+<status status="FAIL" starttime="20211104 21:53:41.122" endtime="20211104 21:53:52.473"/>
+</kw>
+<kw name="Input Text" library="SikuliLibrary">
+<arg>searchtext.png</arg>
+<arg>notepad</arg>
+<doc>Input text
+ Image could be empty</doc>
+<status status="NOT RUN" starttime="20211104 21:53:52.479" endtime="20211104 21:53:52.479"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>notepad.png</arg>
+<doc>Click</doc>
+<status status="NOT RUN" starttime="20211104 21:53:52.480" endtime="20211104 21:53:52.480"/>
+</kw>
+<status status="FAIL" starttime="20211104 21:53:41.121" endtime="20211104 21:53:52.481">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(windows.png) S: 0.699999988079071</status>
+</test>
+<status status="FAIL" starttime="20211104 21:53:28.511" endtime="20211104 21:53:52.488"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
