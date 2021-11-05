@@ -6,7 +6,7 @@ ${Path}  C:/Users/user/Desktop/Sikuli-Images
 *** Test Cases ***
 TC1 Start Browser
     Start button  ${Path}
-    Input Text  Searchtext.png  Google
+    Input Text  Searchtext.png  Google Chrome
     Click  Google-Chrome.png
 
     #Click  Bar.png
